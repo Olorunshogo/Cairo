@@ -6,7 +6,7 @@ fn main() {
     assert!(addResult == 15, "Invalid sum");
 
     // Subtraction
-    let subtractionResult: u8 = sub_num(32, 8);
+    let subtractionResult: u8 = sub_num(8, 32);
     println!("The result is: {}", subtractionResult);
     // assert!(subtractionResult == 3, "Invalid subtractions")
 
@@ -32,6 +32,14 @@ fn sub_num(x: u8, y: u8) -> u8 {
     return x - y;
 }
 
+fn sub_number(x: u32, y: u32) -> Result<u32, felt252> {
+    if x < y {
+        Result::Err('Negative result')
+    } else {
+        Result::Ok(x - y)
+    }
+}
+
 // multiplication function
 fn multiply_num(x: u8, y: u8) -> u8 {
     let result: u8 = x * y;
@@ -44,9 +52,4 @@ fn divide_num(x: u8, y: u8) -> u8 {
     let result: u8 = x / y;
     return result;
 }
-// Assignment
-// 1. Add an if statement to the subtraction to check if the result is negative, and throw an error
-// if it is.
-// 2. Do the same for multiplication and division functions.
-
 
