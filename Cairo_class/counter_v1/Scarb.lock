@@ -2,9 +2,14 @@
 version = 1
 
 [[package]]
+name = "cairo_6"
+version = "0.1.0"
+
+[[package]]
 name = "counter_v1"
 version = "0.1.0"
 dependencies = [
+ "cairo_6",
  "snforge_std",
 ]
 

@@ -1,6 +1,2 @@
-// mod hello_world;
-mod integer;
-// mod string;
-// mod bool;
-
-
+pub mod integer;
+pub mod bool_utils;
