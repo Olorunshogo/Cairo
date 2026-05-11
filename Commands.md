@@ -115,16 +115,6 @@ sncast invoke --network sepolia --contract-address 0x070b299a5852d3ff6342e8480ff
 sncast invoke --network sepolia --contract-address 0x070b299a5852d3ff6342e8480ff345cee294a31a80acd770eed80c7d1e088c1c --function reset_count
 ```
 
-
-
-
-
-
-
-
-
-
-
 - Send funds from `shogo` -> `cairo_account`:
 ```bash
 sncast invoke \
